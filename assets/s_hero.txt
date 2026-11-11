@@ -1,0 +1,69 @@
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="container grid-2" style="align-items: center; z-index: 2; position: relative;">
+    <div class="hero-content">
+      <p class="hero-eyebrow">Established 2006 &nbsp;·&nbsp; Hyderabad, India</p>
+      <h1>Discovering the <br><em>Mystic Sciences</em><br> of Ancient India</h1>
+      <div class="hero-divider"></div>
+      <p class="hero-sub">We unveil the mystic culture, rituals, and cosmic sciences preserved across India's rich traditions — bridging ancient wisdom with modern understanding.</p>
+      <div class="hero-actions" style="display: flex; gap: 1rem; flex-wrap: wrap;">
+        <a href="#knowledge" class="btn-primary">Explore Knowledge Bank</a>
+        <a href="#about" class="btn-outline">Our Story</a>
+      </div>
+      <p class="hero-since" style="margin-top: 3rem; color: var(--color-muted);">&#9670; Since 2006 · Registered 176/IU/2016 &#9670;</p>
+    </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" style="width: 100%; max-width: 450px; height: auto; transform-origin: center; animation: slowSpin 40s linear infinite, float 8s ease-in-out infinite; filter: drop-shadow(0 0 40px rgba(232,160,32,0.4));">
+        <!-- Outer Cosmic Ring -->
+        <circle cx="100" cy="100" r="95" fill="none" stroke="var(--color-secondary)" stroke-width="0.5" stroke-dasharray="1 3" opacity="0.6" />
+        <circle cx="100" cy="100" r="85" fill="none" stroke="var(--color-primary)" stroke-width="1.5" opacity="0.8" />
+        
+        <!-- 24 Radiating Sun Rays (Surya Mandala) -->
+        <g stroke="var(--color-primary)" stroke-width="1" fill="none" opacity="0.7">
+          <path d="M100 15 L105 40 L100 50 L95 40 Z"/>
+          <path d="M100 15 L105 40 L100 50 L95 40 Z" transform="rotate(15 100 100)"/>
+          <path d="M100 15 L105 40 L100 50 L95 40 Z" transform="rotate(30 100 100)"/>
+          <path d="M100 15 L105 40 L100 50 L95 40 Z" transform="rotate(45 100 100)"/>
+          <path d="M100 15 L105 40 L100 50 L95 40 Z" transform="rotate(60 100 100)"/>
+          <path d="M100 15 L105 40 L100 50 L95 40 Z" transform="rotate(75 100 100)"/>
+          <path d="M100 15 L105 40 L100 50 L95 40 Z" transform="rotate(90 100 100)"/>
+          <path d="M100 15 L105 40 L100 50 L95 40 Z" transform="rotate(105 100 100)"/>
+          <path d="M100 15 L105 40 L100 50 L95 40 Z" transform="rotate(120 100 100)"/>
+          <path d="M100 15 L105 40 L100 50 L95 40 Z" transform="rotate(135 100 100)"/>
+          <path d="M100 15 L105 40 L100 50 L95 40 Z" transform="rotate(150 100 100)"/>
+          <path d="M100 15 L105 40 L100 50 L95 40 Z" transform="rotate(165 100 100)"/>
+          <path d="M100 15 L105 40 L100 50 L95 40 Z" transform="rotate(180 100 100)"/>
+          <path d="M100 15 L105 40 L100 50 L95 40 Z" transform="rotate(195 100 100)"/>
+          <path d="M100 15 L105 40 L100 50 L95 40 Z" transform="rotate(210 100 100)"/>
+          <path d="M100 15 L105 40 L100 50 L95 40 Z" transform="rotate(225 100 100)"/>
+          <path d="M100 15 L105 40 L100 50 L95 40 Z" transform="rotate(240 100 100)"/>
+          <path d="M100 15 L105 40 L100 50 L95 40 Z" transform="rotate(255 100 100)"/>
+          <path d="M100 15 L105 40 L100 50 L95 40 Z" transform="rotate(270 100 100)"/>
+          <path d="M100 15 L105 40 L100 50 L95 40 Z" transform="rotate(285 100 100)"/>
+          <path d="M100 15 L105 40 L100 50 L95 40 Z" transform="rotate(300 100 100)"/>
+          <path d="M100 15 L105 40 L100 50 L95 40 Z" transform="rotate(315 100 100)"/>
+          <path d="M100 15 L105 40 L100 50 L95 40 Z" transform="rotate(330 100 100)"/>
+          <path d="M100 15 L105 40 L100 50 L95 40 Z" transform="rotate(345 100 100)"/>
+        </g>
+        
+        <!-- Inner Petals -->
+        <circle cx="100" cy="100" r="50" fill="rgba(232,160,32,0.15)" stroke="var(--color-secondary)" stroke-width="1.5" />
+        <g stroke="var(--color-primary)" stroke-width="1.5" fill="none" opacity="0.8">
+          <circle cx="100" cy="70" r="15" />
+          <circle cx="100" cy="70" r="15" transform="rotate(45 100 100)"/>
+          <circle cx="100" cy="70" r="15" transform="rotate(90 100 100)"/>
+          <circle cx="100" cy="70" r="15" transform="rotate(135 100 100)"/>
+          <circle cx="100" cy="70" r="15" transform="rotate(180 100 100)"/>
+          <circle cx="100" cy="70" r="15" transform="rotate(225 100 100)"/>
+          <circle cx="100" cy="70" r="15" transform="rotate(270 100 100)"/>
+          <circle cx="100" cy="70" r="15" transform="rotate(315 100 100)"/>
+        </g>
+        
+        <!-- Solar Core -->
+        <circle cx="100" cy="100" r="28" fill="var(--color-primary)" filter="drop-shadow(0 0 15px var(--color-primary))" />
+        <circle cx="100" cy="100" r="24" fill="#1C0A05" />
+        <circle cx="100" cy="100" r="12" fill="var(--color-secondary)" />
+        <circle cx="100" cy="100" r="4" fill="#FFF" />
+      </svg>
+    </div>
+  </div>
+</section>

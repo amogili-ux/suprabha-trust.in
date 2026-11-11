@@ -1,0 +1,93 @@
+<!-- SUBMIT VIDEOS -->
+<section id="videos" class="alt-bg">
+  <div class="container">
+    <p class="section-eyebrow">Share Your Knowledge</p>
+    <h2 class="section-title">Submit Your Videos</h2>
+    <div class="gold-line"></div>
+    <p class="section-desc" style="margin-bottom: 4rem;">Help us grow our visual archive of India's traditional and cultural sciences. Share documentary films, ritual recordings, lecture videos, and field documentation with our community.</p>
+
+    <!-- Video type cards -->
+    <div class="card-grid" style="margin-bottom: 4rem;">
+      <div class="card reveal" style="text-align: center; padding: 2.5rem;">
+        <div style="font-size: 2.5rem; margin-bottom: 1rem;">&#127909;</div>
+        <h3 style="font-size: 1.4rem; color: var(--color-primary); margin-bottom: 0.5rem;">Documentaries</h3>
+        <p style="font-size: 0.9rem; color: var(--color-muted);">Cultural and heritage documentaries on Indian traditions</p>
+      </div>
+      <div class="card reveal reveal-delay-1" style="text-align: center; padding: 2.5rem;">
+        <div style="font-size: 2.5rem; margin-bottom: 1rem;">&#127774;</div>
+        <h3 style="font-size: 1.4rem; color: var(--color-primary); margin-bottom: 0.5rem;">Ritual Recordings</h3>
+        <p style="font-size: 0.9rem; color: var(--color-muted);">Field recordings of ceremonies, pujas, and rituals</p>
+      </div>
+      <div class="card reveal reveal-delay-2" style="text-align: center; padding: 2.5rem;">
+        <div style="font-size: 2.5rem; margin-bottom: 1rem;">&#127891;</div>
+        <h3 style="font-size: 1.4rem; color: var(--color-primary); margin-bottom: 0.5rem;">Lectures</h3>
+        <p style="font-size: 0.9rem; color: var(--color-muted);">Discourses by gurus, historians, and cultural scholars</p>
+      </div>
+    </div>
+
+    <!-- Submission form & Guidelines -->
+    <div class="grid-2" style="align-items: start;">
+      
+      <!-- Video Form -->
+      <div class="card reveal" style="padding: 3rem;">
+        <h3 style="font-family: var(--font-display); font-size: 2rem; color: var(--color-primary); margin-bottom: 2rem;">Submission Form</h3>
+        <form name="video-submission" data-netlify="true" onsubmit="handleVideoSubmit(event)" style="display: flex; flex-direction: column; gap: 1.5rem;">
+          <div class="field">
+            <label style="display: block; font-size: 0.8rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em; color: var(--color-muted); margin-bottom: 0.5rem;">Your Name *</label>
+            <input type="text" name="name" placeholder="Full name" required style="width: 100%; background: rgba(11,13,23,0.5); border: 1px solid rgba(255,255,255,0.1); color: var(--color-text); padding: 1rem; border-radius: 4px; outline: none;">
+          </div>
+          <div class="field">
+            <label style="display: block; font-size: 0.8rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em; color: var(--color-muted); margin-bottom: 0.5rem;">Email Address *</label>
+            <input type="email" name="email" placeholder="your@email.com" required style="width: 100%; background: rgba(11,13,23,0.5); border: 1px solid rgba(255,255,255,0.1); color: var(--color-text); padding: 1rem; border-radius: 4px; outline: none;">
+          </div>
+          <div class="field">
+            <label style="display: block; font-size: 0.8rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em; color: var(--color-muted); margin-bottom: 0.5rem;">Video Title *</label>
+            <input type="text" name="video_title" placeholder="Title of your video" required style="width: 100%; background: rgba(11,13,23,0.5); border: 1px solid rgba(255,255,255,0.1); color: var(--color-text); padding: 1rem; border-radius: 4px; outline: none;">
+          </div>
+          <div class="field">
+            <label style="display: block; font-size: 0.8rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em; color: var(--color-muted); margin-bottom: 0.5rem;">Video Link *</label>
+            <input type="url" name="video_link" placeholder="YouTube, Vimeo, or Google Drive Link" required style="width: 100%; background: rgba(11,13,23,0.5); border: 1px solid rgba(255,255,255,0.1); color: var(--color-text); padding: 1rem; border-radius: 4px; outline: none;">
+          </div>
+          <div class="field">
+            <label style="display: block; font-size: 0.8rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em; color: var(--color-muted); margin-bottom: 0.5rem;">Description *</label>
+            <textarea name="description" placeholder="Briefly describe the content..." required style="width: 100%; height: 120px; background: rgba(11,13,23,0.5); border: 1px solid rgba(255,255,255,0.1); color: var(--color-text); padding: 1rem; border-radius: 4px; outline: none; resize: vertical;"></textarea>
+          </div>
+          <div style="display: flex; gap: 1rem; align-items: flex-start;">
+            <input type="checkbox" name="consent" id="video-consent" style="margin-top: 5px;" required>
+            <label for="video-consent" style="font-size: 0.9rem; color: var(--color-muted); line-height: 1.5; cursor: pointer;">I confirm this video is my original work or I have the rights to share it, and I consent to Suprabha Trust publishing it.</label>
+          </div>
+          <button type="submit" class="btn-primary" style="width: 100%; border: none; cursor: pointer; padding: 1.2rem; font-size: 1rem; margin-top: 1rem;">Submit Video</button>
+        </form>
+      </div>
+
+      <!-- Guidelines -->
+      <div class="reveal reveal-delay-1" style="padding: 2rem;">
+        <h3 style="font-family: var(--font-display); font-size: 2rem; color: var(--color-primary); margin-bottom: 2rem;">Guidelines</h3>
+        
+        <div style="margin-bottom: 2rem;">
+          <h4 style="color: var(--color-text); font-size: 1.2rem; margin-bottom: 0.5rem;">1. Content must be relevant</h4>
+          <p style="color: var(--color-muted); font-size: 0.95rem;">Videos should focus on traditional and cultural sciences of India — rituals, heritage sites, philosophy, or related subjects.</p>
+        </div>
+        
+        <div style="margin-bottom: 2rem;">
+          <h4 style="color: var(--color-text); font-size: 1.2rem; margin-bottom: 0.5rem;">2. Original content only</h4>
+          <p style="color: var(--color-muted); font-size: 0.95rem;">Submit only videos you filmed yourself or have explicit permission to share.</p>
+        </div>
+        
+        <div style="margin-bottom: 2rem;">
+          <h4 style="color: var(--color-text); font-size: 1.2rem; margin-bottom: 0.5rem;">3. Accepted Formats</h4>
+          <p style="color: var(--color-muted); font-size: 0.95rem;">YouTube, Vimeo, Google Drive, or Dropbox links accepted. Minimum 480p resolution.</p>
+        </div>
+        
+        <div style="background: rgba(232, 160, 32, 0.05); border: 1px solid rgba(232, 160, 32, 0.2); padding: 2rem; border-radius: var(--radius-md); margin-top: 3rem;">
+          <p style="color: var(--color-muted); font-size: 0.95rem; margin-bottom: 0;">Have a large collection? Write to us directly at <a href="mailto:suprabhaind@gmail.com" style="color: var(--color-primary);">suprabhaind@gmail.com</a>.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+

@@ -1,0 +1,625 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Home | Suprabha Trust</title>
+<meta name="description" content="Preserving and promoting India's mystic sciences, ancient wisdom, Vedic traditions, and cultural heritage.">
+<meta name="keywords" content="Suprabha Trust, Mystic Sciences, Ancient India, Vedic Sciences, Life Sciences, Sanatana Dharma, Hyderabad, Cultural Heritage">
+<meta property="og:title" content="Home | Suprabha Trust">
+<meta property="og:description" content="Preserving and promoting India's mystic sciences, ancient wisdom, Vedic traditions, and cultural heritage.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.suprabha-trust.in">
+<meta property="og:image" content="https://www.suprabha-trust.in/assets/img/suprabha-og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="canonical" href="https://www.suprabha-trust.in">
+<!-- Favicon — gold OM symbol on maroon -->
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='8' fill='%230B0D17'/><text x='32' y='46' font-size='38' text-anchor='middle' fill='%23E8A020' font-family='serif'>ॐ</text></svg>">
+<meta name="theme-color" content="#0B0D17">
+<meta name="apple-mobile-web-app-title" content="Suprabha Trust">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/main.css">
+<script defer src="assets/js/main.js"></script>
+</head>
+<body>
+
+<!-- Inline SVG logo symbol — orange & silver -->
+<svg width="0" height="0" style="position:absolute">
+  <defs>
+        <symbol id="suprabha-logo" viewBox="0 0 100 100">
+      <circle cx="50" cy="50" r="46" fill="none" stroke="#E8A020" stroke-width="2" opacity="0.3" />
+      <g stroke="#E8A020" stroke-width="2" fill="none" transform="translate(0, 10)">
+        <path d="M 50 20 C 65 40 65 65 50 80 C 35 65 35 40 50 20 Z" />
+        <path d="M 50 80 C 65 75 80 60 75 40 C 65 45 55 60 50 80 Z" />
+        <path d="M 50 80 C 35 75 20 60 25 40 C 35 45 45 60 50 80 Z" />
+        <path d="M 50 80 C 70 85 95 75 90 55 C 80 65 65 75 50 80 Z" />
+        <path d="M 50 80 C 30 85 5 75 10 55 C 20 65 35 75 50 80 Z" />
+      </g>
+      <path d="M 30 86 Q 50 92 70 86" fill="none" stroke="#D4820A" stroke-width="2" opacity="0.8" />
+    </symbol>
+
+  </defs>
+</svg>
+
+<!-- ═══════════════════════════════════════════
+     SUPRABHA TRUST — NAVIGATION SYSTEM v3
+     Pattern: Deep Maroon + Antique Gold + Parchment
+     Layout:  Fixed topbar + Full-width numbered tab strip
+═══════════════════════════════════════════ -->
+
+<!-- ═══ TOP BAR ═══ -->
+<div id="mpt-topbar">
+  <a id="mpt-logo" href="index.html" style="cursor:pointer; text-decoration:none; color:inherit;">
+    <svg viewBox="0 0 680 520"><use href="#suprabha-logo"/></svg>
+    <div>
+      <div class="mpt-logo-name">Suprabha Trust</div>
+      <span class="mpt-logo-sub">Mystic Sciences of Ancient India · Est. 2006</span>
+    </div>
+  </a>
+  
+
+  <nav id="mpt-desktop-nav">
+    <a href="index.html">Home</a>
+    <a href="about.html">About Us</a>
+    <a href="aspects.html">Sanatana</a>
+    <a href="knowledge.html">Knowledge</a>
+    <a href="contact.html">Contact</a>
+    <a href="donate.html" class="btn-primary" style="padding:0.4rem 1.2rem; color:var(--color-deep) !important; letter-spacing:normal; text-transform:none;">Donate</a>
+  </nav>
+  <button id="mpt-hamburger" onclick="mptToggle()" aria-label="Open menu">
+    <span></span><span></span><span></span>
+  </button>
+</div>
+
+<!-- ═══ SIDEBAR OVERLAY ═══ -->
+<div id="mpt-overlay" onclick="mptToggle()"></div>
+
+
+
+
+
+
+
+<!-- ═══ SIDEBAR ═══ -->
+<!-- === SIDEBAR === -->
+<div id="mpt-sidebar">
+  <div class="mpt-sidebar-header">
+    <a href="index.html" style="display:flex;align-items:center;text-decoration:none;color:inherit;gap:0.75rem;">
+      <svg viewBox="0 0 680 520" style="width:38px;height:38px;fill:none;"><use href="#suprabha-logo"/></svg>
+      <div>
+        <div class="mpt-sb-name" style="font-size:1.1rem;font-weight:700;color:var(--accent-gold);margin-bottom:0.1rem;">Suprabha Trust</div>
+        <span class="mpt-sb-tag" style="font-size:0.58rem;color:rgba(255,255,255,0.4);">Mystic Sciences Â· Est. 2006</span>
+      </div>
+    </a>
+    <button class="mpt-sidebar-close" onclick="mptToggle()" aria-label="Close menu" style="margin-left:auto;background:transparent;border:none;color:rgba(255,255,255,0.5);cursor:pointer;padding:0.5rem;display:flex;align-items:center;justify-content:center;width:36px;height:36px;">
+      <svg viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round" style="width:20px;height:20px;"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
+  </div>
+
+  <nav class="mpt-sidebar-nav" style="flex:1;overflow-y:auto;display:flex;flex-direction:column;">
+    <!-- Group 1: Organisation -->
+    <div class="mpt-sb-group open">
+      <button class="mpt-sb-group-header" onclick="toggleSbGroup(this)">
+        <span>Organisation</span>
+        <svg class="chevron-icon" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round" style="width:14px;height:14px;transition:transform 0.3s;"><polyline points="6 9 12 15 18 9"/></svg>
+      </button>
+      <div class="mpt-sb-group-content" style="transition:max-height 0.35s cubic-bezier(0.16, 1, 0.3, 1);overflow:hidden;">
+        <a class="mpt-sb-link" data-pid="index" href="index.html">
+          <svg class="sb-icon" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" style="width:16px;height:16px;margin-right:12px;opacity:0.7;"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          Home
+        </a>
+        <a class="mpt-sb-link" data-pid="about" href="about.html">
+          <svg class="sb-icon" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" style="width:16px;height:16px;margin-right:12px;opacity:0.7;"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          About Us
+        </a>
+        <a class="mpt-sb-link" data-pid="aspects" href="aspects.html">
+          <svg class="sb-icon" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" style="width:16px;height:16px;margin-right:12px;opacity:0.7;"><circle cx="12" cy="12" r="10"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/><path d="M2 12h20"/></svg>
+          Sanatana Dharma
+        </a>
+        <a class="mpt-sb-link" data-pid="contact" href="contact.html">
+          <svg class="sb-icon" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" style="width:16px;height:16px;margin-right:12px;opacity:0.7;"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          Contact
+        </a>
+      </div>
+    </div>
+
+    <!-- Group 2: Knowledge Bank -->
+    <div class="mpt-sb-group open">
+      <button class="mpt-sb-group-header" onclick="toggleSbGroup(this)">
+        <span>Explore Knowledge</span>
+        <svg class="chevron-icon" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round" style="width:14px;height:14px;transition:transform 0.3s;"><polyline points="6 9 12 15 18 9"/></svg>
+      </button>
+      <div class="mpt-sb-group-content" style="transition:max-height 0.35s cubic-bezier(0.16, 1, 0.3, 1);overflow:hidden;">
+        <a class="mpt-sb-link" data-pid="knowledge" href="knowledge.html">
+          <svg class="sb-icon" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" style="width:16px;height:16px;margin-right:12px;opacity:0.7;"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+          Knowledge Bank
+        </a>
+        <a class="mpt-sb-link" data-pid="lifesciences" href="lifesciences.html">
+          <svg class="sb-icon" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" style="width:16px;height:16px;margin-right:12px;opacity:0.7;"><circle cx="12" cy="12" r="10"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/><path d="M12 6v6l4 2"/></svg>
+          Life Sciences
+        </a>
+        <a class="mpt-sb-link" data-pid="vedicsciences" href="vedicsciences.html">
+          <svg class="sb-icon" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" style="width:16px;height:16px;margin-right:12px;opacity:0.7;"><circle cx="12" cy="12" r="10"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+          Vedic Sciences
+        </a>
+        <a class="mpt-sb-link" data-pid="metaphysics" href="metaphysics.html">
+          <svg class="sb-icon" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" style="width:16px;height:16px;margin-right:12px;opacity:0.7;"><path d="M12 2L2 22h20L12 2z"/><circle cx="12" cy="13" r="2"/></svg>
+          Meta-Physics
+        </a>
+      </div>
+    </div>
+
+    <!-- Group 3: Get Involved -->
+    <div class="mpt-sb-group open">
+      <button class="mpt-sb-group-header" onclick="toggleSbGroup(this)">
+        <span>Get Involved</span>
+        <svg class="chevron-icon" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round" style="width:14px;height:14px;transition:transform 0.3s;"><polyline points="6 9 12 15 18 9"/></svg>
+      </button>
+      <div class="mpt-sb-group-content" style="transition:max-height 0.35s cubic-bezier(0.16, 1, 0.3, 1);overflow:hidden;">
+        <a class="mpt-sb-link" data-pid="articles" href="articles.html">
+          <svg class="sb-icon" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" style="width:16px;height:16px;margin-right:12px;opacity:0.7;"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 1 1 3 3L12 15l-4 1 1-4z"/></svg>
+          Submit Article
+        </a>
+        <a class="mpt-sb-link" data-pid="videos" href="videos.html">
+          <svg class="sb-icon" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" style="width:16px;height:16px;margin-right:12px;opacity:0.7;"><path d="M23 7a2 2 0 0 0-2.45-1.45L16 7.5V5a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2.5l4.55 1.95A2 2 0 0 0 23 17V7z"/></svg>
+          Submit Video
+        </a>
+        <a class="mpt-sb-link" data-pid="impact" href="impact.html">
+          <svg class="sb-icon" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" style="width:16px;height:16px;margin-right:12px;opacity:0.7;"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
+          Impact Areas
+        </a>
+        <a class="mpt-sb-link" data-pid="partnership" href="partnership.html">
+          <svg class="sb-icon" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" style="width:16px;height:16px;margin-right:12px;opacity:0.7;"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
+          Partnerships
+        </a>
+        <a class="mpt-sb-link" data-pid="programs" href="programs.html">
+          <svg class="sb-icon" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" style="width:16px;height:16px;margin-right:12px;opacity:0.7;"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          Programs
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="mpt-sidebar-footer">
+    <a class="mpt-sb-donate" href="donate.html">Donate Now</a>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<main id="spt-main">
+
+    
+<section class="hero" id="home">
+  <div class="hero-bg">
+    <!-- Mystic Figures & Energy Points Backdrop -->
+        <svg id="vedic-bg" xmlns="http://www.w3.org/2000/svg"
+      style="position:absolute;inset:0;width:100%;height:100%;pointer-events:none;overflow:hidden;"
+      viewBox="0 0 1400 900" preserveAspectRatio="xMidYMid slice">
+      <defs>
+        <radialGradient id="centreGlow" cx="50%" cy="50%" r="50%">
+          <stop offset="0%"  stop-color="#E8A020" stop-opacity="0.10"/>
+          <stop offset="70%" stop-color="#0B0D17" stop-opacity="0"/>
+        </radialGradient>
+      </defs>
+      <!-- Subtle centre ambient glow -->
+      <ellipse cx="700" cy="450" rx="600" ry="400" fill="url(#centreGlow)"/>
+    </svg>
+  </div>
+
+  <div class="hero-content">
+    <svg class="hero-logo-svg"><use href="#suprabha-logo"/></svg>
+    <p class="hero-eyebrow">&#x2B22; Established 2006 <span class="dot">&middot;</span> Hyderabad, India <span class="dot">&middot;</span> suprabha-trust.in</p>
+    <h1><span class="hero-white">Discovering the</span> <em>Mystic Sciences</em> <span class="hero-white">of Ancient India</span></h1>
+    <div class="hero-divider"></div>
+    <p class="hero-sub">We unveil the mystic culture, rituals, and cosmic sciences preserved across India's rich traditions &mdash; bridging ancient wisdom with modern understanding.</p>
+    <div class="hero-actions">
+      <a href="#knowledge" class="btn-primary">Explore Knowledge Bank</a>
+      <a href="#about" class="btn-outline">Our Story</a>
+    </div>
+    <p class="hero-since" style="margin-top: 3rem;">&#9670; Since 2006 &nbsp;&middot;&nbsp; Reg. 176/IU/2016 &nbsp;&middot;&nbsp; www.suprabha-trust.in &#9670;</p>
+  </div>
+</section>
+
+
+<!-- ABOUT STRIP -->
+<div class="about-strip reveal" id="about">
+  <p>Suprabha Trust has worked since <strong>2006</strong> to discover and document the mystic cultures, sciences, and rituals performed across many parts of India — honoring a civilization whose depth and diversity gave rise to <strong>Hinduism, Sikhism, Buddhism</strong>, and beyond.</p>
+</div>
+
+<!-- THREE ASPECTS -->
+<section class="aspects reveal" id="aspects">
+  <div class="container">
+    <p class="section-eyebrow">Understanding Sanatana Dharma</p>
+    <h2 class="section-title">Three Aspects of Practice</h2>
+    <div class="gold-line"></div>
+    <p class="section-desc">We explore Sanatana Dharma through three fundamental dimensions that span the cosmic, divine, and spiritual — each offering a unique lens into ancient Indian knowledge systems.</p>
+    <div class="aspects-grid reveal-stagger">
+      <div class="aspect-card">
+        <div class="aspect-num">01</div>
+        <p class="aspect-tag">Primary Focus</p>
+        <h3>Adhi Bhauthika</h3>
+        <p>A rare and thoroughly scientific practice relating not only to the world but also to cosmic sciences. This aspect makes our work unique — connecting earthly phenomena with universal principles.</p>
+      </div>
+      <div class="aspect-card">
+        <div class="aspect-num">02</div>
+        <p class="aspect-tag">The Divine Aspect</p>
+        <h3>Adhi Daivika</h3>
+        <p>The divine dimension of Sanatana Dharma practices, connecting spiritual wisdom with cosmic consciousness and universal energies. A bridge between human experience and the greater forces that govern existence.</p>
+      </div>
+      <div class="aspect-card">
+        <div class="aspect-num">03</div>
+        <p class="aspect-tag">The Spiritual Dimension</p>
+        <h3>Adhyatmika</h3>
+        <p>The innermost spiritual dimension of ancient practices, focusing on inner consciousness and the journey toward self-realization — the ultimate purpose of all Sanatana Dharma traditions.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CHAKRAS INTERACTIVE -->
+<section class="chakras-section reveal alt-bg" id="chakras" style="padding: 6rem 0; overflow: hidden;">
+  <div class="container">
+    <p class="eyebrow reveal" style="text-align: center;">The Subtle Body</p>
+    <h2 class="reveal" style="text-align: center;">The 7 Chakras</h2>
+    <div class="divider reveal" style="margin: 1.5rem auto 4rem; background: var(--color-primary);"></div>
+    
+    <div class="chakra-container reveal reveal-delay-1" style="position: relative; width: 100%; max-width: 900px; margin: 0 auto; display: flex; justify-content: center; align-items: center; min-height: 600px;">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 600" style="width: 100%; height: auto; overflow: visible;">
+        <!-- Faint Background Mandala -->
+        <g opacity="0.05" transform="translate(500, 300) scale(1.8)">
+           <circle r="150" fill="none" stroke="var(--color-primary)" stroke-width="1"/>
+           <path d="M0 -150 L150 0 L0 150 L-150 0 Z" fill="none" stroke="var(--color-primary)" stroke-width="0.5"/>
+           <path d="M0 -150 L150 0 L0 150 L-150 0 Z" fill="none" stroke="var(--color-primary)" stroke-width="0.5" transform="rotate(45)"/>
+        </g>
+
+        <!-- Sacred Geometry Wireframe Body -->
+        <g stroke="var(--color-primary)" fill="none" stroke-width="1.5" opacity="0.4">
+          <!-- Head -->
+          <circle cx="500" cy="120" r="35" opacity="0.6"/>
+          <!-- Central Energy Channel (Sushumna) -->
+          <line x1="500" y1="155" x2="500" y2="520" stroke-dasharray="4 4" opacity="0.4"/>
+          <!-- Shoulders and Arms sweeping to knees -->
+          <path d="M 500 170 C 430 170 380 220 380 290 C 380 370 350 430 300 480" opacity="0.6"/>
+          <path d="M 500 170 C 570 170 620 220 620 290 C 620 370 650 430 700 480" opacity="0.6"/>
+          <!-- Lotus Base (Legs) -->
+          <path d="M 500 540 C 350 540 250 520 300 480 C 350 440 450 450 500 450 C 550 450 650 440 700 480 C 750 520 650 540 500 540 Z" opacity="0.6"/>
+        </g>
+
+        <!-- Interactive Chakra Groups -->
+        <!-- Root Chakra (Muladhara) - Red -->
+        <g class="chakra-node" transform="translate(500, 500)">
+          <circle class="chakra-glow" cx="0" cy="0" r="16" fill="#FF2A2A" opacity="0.8" filter="drop-shadow(0 0 10px #FF2A2A)"/>
+          <polygon points="0,8 -8,-4 8,-4" fill="#FFF"/>
+          <line class="chakra-line" x1="20" y1="0" x2="20" y2="0" stroke="#FF2A2A" stroke-width="1.5" stroke-dasharray="4 4"/>
+          <g class="chakra-info" transform="translate(180, 0)" opacity="0">
+            <text x="0" y="-5" fill="#FF2A2A" font-family="var(--font-display)" font-size="20" font-weight="600">Root Chakra (Muladhara)</text>
+            <text x="0" y="15" fill="var(--color-muted)" font-family="var(--font-body)" font-size="14">Foundation, Stability, Grounding</text>
+          </g>
+        </g>
+
+        <!-- Sacral Chakra (Svadhisthana) - Orange -->
+        <g class="chakra-node" transform="translate(500, 420)">
+          <circle class="chakra-glow" cx="0" cy="0" r="16" fill="#FF7F00" opacity="0.8" filter="drop-shadow(0 0 10px #FF7F00)"/>
+          <circle cx="0" cy="0" r="6" fill="none" stroke="#FFF" stroke-width="2"/>
+          <line class="chakra-line" x1="20" y1="0" x2="20" y2="0" stroke="#FF7F00" stroke-width="1.5" stroke-dasharray="4 4"/>
+          <g class="chakra-info" transform="translate(180, 0)" opacity="0">
+            <text x="0" y="-5" fill="#FF7F00" font-family="var(--font-display)" font-size="20" font-weight="600">Sacral Chakra (Svadhisthana)</text>
+            <text x="0" y="15" fill="var(--color-muted)" font-family="var(--font-body)" font-size="14">Creativity, Passion, Connection</text>
+          </g>
+        </g>
+
+        <!-- Solar Plexus Chakra (Manipura) - Yellow -->
+        <g class="chakra-node" transform="translate(500, 340)">
+          <circle class="chakra-glow" cx="0" cy="0" r="16" fill="#FFD700" opacity="0.8" filter="drop-shadow(0 0 10px #FFD700)"/>
+          <polygon points="0,-8 -8,4 8,4" fill="none" stroke="#FFF" stroke-width="2"/>
+          <line class="chakra-line" x1="20" y1="0" x2="20" y2="0" stroke="#FFD700" stroke-width="1.5" stroke-dasharray="4 4"/>
+          <g class="chakra-info" transform="translate(180, 0)" opacity="0">
+            <text x="0" y="-5" fill="#FFD700" font-family="var(--font-display)" font-size="20" font-weight="600">Solar Plexus Chakra (Manipura)</text>
+            <text x="0" y="15" fill="var(--color-muted)" font-family="var(--font-body)" font-size="14">Power, Confidence, Willpower</text>
+          </g>
+        </g>
+
+        <!-- Heart Chakra (Anahata) - Green -->
+        <g class="chakra-node" transform="translate(500, 260)">
+          <circle class="chakra-glow" cx="0" cy="0" r="16" fill="#00FF00" opacity="0.8" filter="drop-shadow(0 0 10px #00FF00)"/>
+          <path d="M -6 -2 C -6 -6 -2 -6 0 -2 C 2 -6 6 -6 6 -2 C 6 2 0 6 0 6 C 0 6 -6 2 -6 -2 Z" fill="#FFF"/>
+          <line class="chakra-line" x1="20" y1="0" x2="20" y2="0" stroke="#00FF00" stroke-width="1.5" stroke-dasharray="4 4"/>
+          <g class="chakra-info" transform="translate(180, 0)" opacity="0">
+            <text x="0" y="-5" fill="#00FF00" font-family="var(--font-display)" font-size="20" font-weight="600">Heart Chakra (Anahata)</text>
+            <text x="0" y="15" fill="var(--color-muted)" font-family="var(--font-body)" font-size="14">Love, Compassion, Harmony</text>
+          </g>
+        </g>
+
+        <!-- Throat Chakra (Vishuddha) - Blue -->
+        <g class="chakra-node" transform="translate(500, 180)">
+          <circle class="chakra-glow" cx="0" cy="0" r="16" fill="#00BFFF" opacity="0.8" filter="drop-shadow(0 0 10px #00BFFF)"/>
+          <circle cx="0" cy="0" r="8" fill="none" stroke="#FFF" stroke-width="2"/>
+          <line class="chakra-line" x1="20" y1="0" x2="20" y2="0" stroke="#00BFFF" stroke-width="1.5" stroke-dasharray="4 4"/>
+          <g class="chakra-info" transform="translate(180, 0)" opacity="0">
+            <text x="0" y="-5" fill="#00BFFF" font-family="var(--font-display)" font-size="20" font-weight="600">Throat Chakra (Vishuddha)</text>
+            <text x="0" y="15" fill="var(--color-muted)" font-family="var(--font-body)" font-size="14">Expression, Communication, Truth</text>
+          </g>
+        </g>
+
+        <!-- Third Eye Chakra (Ajna) - Indigo -->
+        <g class="chakra-node" transform="translate(500, 120)">
+          <circle class="chakra-glow" cx="0" cy="0" r="16" fill="#4B0082" opacity="0.8" filter="drop-shadow(0 0 10px #4B0082)"/>
+          <ellipse cx="0" cy="0" rx="8" ry="4" fill="#FFF"/>
+          <line class="chakra-line" x1="20" y1="0" x2="20" y2="0" stroke="#4B0082" stroke-width="1.5" stroke-dasharray="4 4"/>
+          <g class="chakra-info" transform="translate(180, 0)" opacity="0">
+            <text x="0" y="-5" fill="#8A2BE2" font-family="var(--font-display)" font-size="20" font-weight="600">Third Eye Chakra (Ajna)</text>
+            <text x="0" y="15" fill="var(--color-muted)" font-family="var(--font-body)" font-size="14">Intuition, Insight, Imagination</text>
+          </g>
+        </g>
+
+        <!-- Crown Chakra (Sahasrara) - Violet -->
+        <g class="chakra-node" transform="translate(500, 60)">
+          <circle class="chakra-glow" cx="0" cy="0" r="20" fill="#9400D3" opacity="0.8" filter="drop-shadow(0 0 15px #9400D3)"/>
+          <path d="M 0 -8 L 4 -2 L 10 0 L 4 2 L 0 8 L -4 2 L -10 0 L -4 -2 Z" fill="#FFF"/>
+          <line class="chakra-line" x1="24" y1="0" x2="24" y2="0" stroke="#9400D3" stroke-width="1.5" stroke-dasharray="4 4"/>
+          <g class="chakra-info" transform="translate(180, 0)" opacity="0">
+            <text x="0" y="-5" fill="#BA55D3" font-family="var(--font-display)" font-size="20" font-weight="600">Crown Chakra (Sahasrara)</text>
+            <text x="0" y="15" fill="var(--color-muted)" font-family="var(--font-body)" font-size="14">Spirituality, Cosmic Connection</text>
+          </g>
+        </g>
+      </svg>
+      
+      <div class="chakra-instruction" style="position: absolute; bottom: 20px; text-align: center; width: 100%; color: var(--color-secondary); font-size: 14px; font-style: italic; animation: pulse 2s infinite;">
+        Tap/Hover over a Chakra to discover its meaning
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- MISSION & VISION -->
+<section class="mission" id="mission">
+  <div class="container">
+    <div class="mission-layout reveal">
+      <div>
+        <p class="section-eyebrow">Who We Are</p>
+        <h2 class="section-title">Mission &amp; Vision</h2>
+        <div class="gold-line"></div>
+        <p class="section-desc" style="max-width:100%;margin-bottom:1rem;">To conserve, document, and celebrate India's traditional and cultural sciences through systematic research, heritage conservation, educational programs, and community partnerships.</p>
+        <p class="section-desc" style="max-width:100%;margin-bottom:1rem;">We envision a world where India's traditional and cultural sciences are recognized, valued, and integrated into contemporary life.</p>
+        <p class="section-desc" style="max-width:100%;">Our discourses are shaped through discussions with <strong style="color:var(--color-primary);">Historians, Spiritual Gurus, Resource Persons, Scientists, and Cultus</strong> — bringing together diverse perspectives.</p>
+        <div class="hero-actions" style="justify-content:flex-start;margin-top:2rem;">
+          <a href="about.html" class="btn-primary">Our Full Story</a>
+        </div>
+      </div>
+      <div>
+        <p class="section-eyebrow">How We Work</p>
+        <h2 class="section-title">Our Approach</h2>
+        <div class="gold-line"></div>
+        <div class="approach-list">
+          <div class="approach-item">
+            <div class="approach-icon">◈</div>
+            <div>
+              <h4>Research &amp; Documentation</h4>
+              <p>Systematic study and recording of traditional knowledge systems, practices, and cultural heritage through scholarly research and fieldwork.</p>
+            </div>
+          </div>
+          <div class="approach-item">
+            <div class="approach-icon">◈</div>
+            <div>
+              <h4>Conservation</h4>
+              <p>Active preservation of monuments, manuscripts, artifacts, and intangible cultural practices through restoration and protection initiatives.</p>
+            </div>
+          </div>
+          <div class="approach-item">
+            <div class="approach-icon">◈</div>
+            <div>
+              <h4>Community Engagement</h4>
+              <p>Working with local communities, practitioners, and stakeholders to ensure heritage preservation is inclusive and sustainable.</p>
+            </div>
+          </div>
+          <div class="approach-item">
+            <div class="approach-icon">◈</div>
+            <div>
+              <h4>Education &amp; Outreach</h4>
+              <p>Sharing knowledge through publications, workshops, exhibitions, and digital platforms to inspire appreciation and understanding.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW WE CONNECT -->
+<section class="connections" id="connections">
+  <div class="container">
+    <p class="section-eyebrow">Four Dimensions</p>
+    <h2 class="section-title">How We Connect</h2>
+    <div class="gold-line"></div>
+    <p class="section-desc">Our work bridges multiple dimensions of human knowledge — weaving together spiritual, philosophical, cultural, and scientific understanding.</p>
+    <div class="connections-grid reveal-stagger">
+      <div class="conn-card">
+        <div class="conn-icon">🙏</div>
+        <h3>Spiritual</h3>
+        <p>Deep insights into the spiritual dimensions of Sanatana Dharma and its living practices across traditions.</p>
+      </div>
+      <div class="conn-card">
+        <div class="conn-icon">📚</div>
+        <h3>Philosophical</h3>
+        <p>Understanding the philosophical foundations and wisdom traditions that form the bedrock of ancient India.</p>
+      </div>
+      <div class="conn-card">
+        <div class="conn-icon">🏛</div>
+        <h3>Cultural</h3>
+        <p>Preserving and celebrating the rich cultural heritage and traditional practices of diverse Indian communities.</p>
+      </div>
+      <div class="conn-card">
+        <div class="conn-icon">✦</div>
+        <h3>Scientific</h3>
+        <p>Exploring the scientific basis of ancient practices and the remarkable cosmic sciences embedded in tradition.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- IMPACT STATISTICS -->
+<section id="stats">
+  <div class="container">
+    <p class="section-eyebrow" style="text-align:center;">Our Impact in Numbers</p>
+    <h2 class="section-title" style="text-align:center;color:var(--color-text);">Two Decades of Heritage Work</h2>
+    <div class="gold-line"></div>
+    <div class="stats-grid reveal-stagger">
+      <div class="stat-item">
+        <span class="stat-number counter" data-target="20">0</span><span class="stat-suffix">+</span>
+        <p class="stat-label">Years of Research</p>
+      </div>
+      <div class="stat-item">
+        <span class="stat-number counter" data-target="500">0</span><span class="stat-suffix">+</span>
+        <p class="stat-label">Knowledge Resources</p>
+      </div>
+      <div class="stat-item">
+        <span class="stat-number counter" data-target="100">0</span><span class="stat-suffix">+</span>
+        <p class="stat-label">Programs &amp; Events</p>
+      </div>
+      <div class="stat-item">
+        <span class="stat-number counter" data-target="12">0</span><span class="stat-suffix">+</span>
+        <p class="stat-label">Partner Institutions</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- KNOWLEDGE BANK TEASER -->
+<section class="knowledge" id="knowledge-teaser">
+  <div class="container">
+    <p class="section-eyebrow">Explore &amp; Learn</p>
+    <h2 class="section-title">Knowledge Bank</h2>
+    <div class="gold-line"></div>
+    <p class="section-desc" style="margin-bottom:2rem;">Browse our extensive collection of articles, research, and insights on India's traditional and cultural sciences — organized by discipline.</p>
+    <div class="categories">
+      <button class="cat-pill active">All Categories</button>
+      <button class="cat-pill">Bio Field Sciences</button>
+      <button class="cat-pill">Humanistic Sciences</button>
+      <button class="cat-pill">Ritual Sciences</button>
+      <button class="cat-pill">Vedic Sciences</button>
+      <button class="cat-pill">Sanatana Dharma</button>
+      <button class="cat-pill">Tantra, Mantra &amp; Yantra</button>
+    </div>
+    <div style="background:var(--color-surface);border:1px solid var(--border);padding:3rem;text-align:center;border-radius:2px;">
+      <p style="font-family:'Philosopher',serif;font-size:1.5rem;font-style:italic;color:var(--color-primary);margin-bottom:1rem;">A living archive of ancient wisdom</p>
+      <p style="color:var(--color-muted);max-width:500px;margin:0 auto 2rem;font-size:0.98rem;line-height:1.8;">Our knowledge bank grows continuously as researchers, practitioners, and scholars contribute their expertise and insights.</p>
+      <a href="knowledge.html" class="btn-primary">Explore Knowledge Bank</a>
+    </div>
+  </div>
+</section>
+
+<!-- DONATE -->
+<section class="donate" id="donate-section">
+  <div class="container">
+    <p class="section-eyebrow">Support Our Work</p>
+    <h2 class="section-title">Preserve Ancient Wisdom</h2>
+    <div class="gold-line"></div>
+    <p style="max-width:600px;margin:0 auto 3rem;color:#9CA3AF;line-height:1.85;text-align:center;">Your support enables us to continue our vital work in preserving India's traditional and cultural sciences — restoring heritage sites, documenting ancient knowledge, and educating future generations.</p>
+    <div class="donate-cards">
+      <div class="donate-card">
+        <h3>Individual Donations</h3>
+        <p>Make a direct contribution to support our heritage conservation work. Every donation, large or small, makes a difference in preserving India's cultural legacy. Contact us to learn about tax benefits.</p>
+        <a href="contact.html" class="btn-primary">Get in Touch</a>
+      </div>
+      <div class="donate-card">
+        <h3>Project Sponsorship</h3>
+        <p>Sponsor specific conservation projects, research initiatives, or educational programs. We'll work with you to identify projects that align with your interests and provide regular impact updates.</p>
+        <a href="contact.html" class="btn-primary">Sponsor a Project</a>
+      </div>
+      <div class="donate-card">
+        <h3>Corporate CSR</h3>
+        <p>Develop long-term CSR partnerships that create sustainable impact. We offer customized programs aligned with your CSR objectives while advancing heritage conservation across India.</p>
+        <a href="contact.html" class="btn-primary">Schedule Consultation</a>
+      </div>
+    </div>
+    <div class="donate-pillars">
+      <div class="donate-pillar"><p class="pillar-title">Heritage</p><p class="pillar-sub">Conservation</p></div>
+      <div class="donate-pillar"><p class="pillar-title">Community</p><p class="pillar-sub">Support</p></div>
+      <div class="donate-pillar"><p class="pillar-title">Education</p><p class="pillar-sub">Programs</p></div>
+      <div class="donate-pillar"><p class="pillar-title">Research</p><p class="pillar-sub">Documentation</p></div>
+    </div>
+  </div>
+</section>
+</main>
+</main>
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <div style="display:flex;align-items:center;gap:0.75rem;margin-bottom:1rem;">
+        <svg viewBox="0 0 680 520" class="footer-logo-svg"><use href="#suprabha-logo"/></svg>
+        <div>
+          <div class="footer-brand-name">Suprabha Trust</div>
+          <div class="mpt-logo-sub">Mystic Sciences of Ancient India &middot; Est. 2006</div>
+        </div>
+      </div>
+      <p>Dedicated to preserving and promoting India's rich traditional and cultural sciences through conservation, education, and community engagement.</p>
+      <p class="reg">Established 2006 · Registered 2016 — 176/IU/2016</p>
+    </div>
+    <div class="footer-col">
+      <h4>About</h4>
+      <ul>
+        <li><a href="about.html">Our Story</a></li>
+        <li><a href="aspects.html">Sanatana Dharma</a></li>
+        <li><a href="impact.html">Impact Areas</a></li>
+        <li><a href="partnership.html">Partnerships</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Knowledge</h4>
+      <ul>
+        <li><a href="knowledge.html">Knowledge Bank</a></li>
+        <li><a href="lifesciences.html">Life Sciences</a></li>
+        <li><a href="vedicsciences.html">Vedic Sciences</a></li>
+        <li><a href="metaphysics.html">Meta-Physics</a></li>
+        <li><a href="articles.html">Submit Article</a></li>
+        <li><a href="videos.html">Submit Video</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Connect</h4>
+      <ul>
+        <li><a href="renewable.html">Renewable Energy</a></li>
+        <li><a href="programs.html">Programs</a></li>
+        <li><a href="donate.html">Donate</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+      <div class="footer-contact">
+        <p>info@suprabha-trust.in<br>+91 98494 46409<br>www.suprabha-trust.in</p>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 Suprabha Trust. All rights reserved. · Reg. 176/IU/2016 · Hyderabad, India</p>
+    <p>www.suprabha-trust.in</p>
+  </div>
+</footer>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+

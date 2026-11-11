@@ -1,0 +1,421 @@
+<!-- INCLUDE header -->
+<!-- INCLUDE sidebar -->
+<!-- SET_TITLE: Videos | Suprabha Trust | Suprabha Trust -->
+<main id="spt-main">
+<div class="container">
+    <p class="section-eyebrow" style="color: rgba(240,242,248,0.6);">Share Your Knowledge</p>
+    <h2 class="section-title" style="color: #0B0D17;">Submit Your Videos</h2>
+    <div class="gold-line"></div>
+    <p class="section-desc" style="color: #9CA3AF; margin-bottom: 3rem;">Help us grow our visual archive of India's traditional and cultural sciences. Share documentary films, ritual recordings, lecture videos, field documentation, and educational content with our community.</p>
+
+    <!-- Video type cards -->
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1px; background: rgba(232,160,32,0.2); border: 1px solid rgba(232,160,32,0.2); margin-bottom: 4rem;">
+      <div style="background: #C8D6DE; padding: 2rem 1.5rem; text-align: center; transition: background 0.3s;" onmouseover="this.style.background='#EEF4F8'" onmouseout="this.style.background='#C8D6DE'">
+        <div style="font-size: 2.4rem; margin-bottom: 0.75rem;">&#127909;</div>
+        <p style="font-family: 'Philosopher', serif; font-size: 1.4rem; color: #E8A020; margin-bottom: 0.4rem;">Documentary Films</p>
+        <p style="font-size: 1.05rem; color: #9CA3AF; line-height: 1.6;">Cultural and heritage documentaries on Indian traditions</p>
+      </div>
+      <div style="background: #C8D6DE; padding: 2rem 1.5rem; text-align: center;" onmouseover="this.style.background='#EEF4F8'" onmouseout="this.style.background='#C8D6DE'">
+        <div style="font-size: 2.4rem; margin-bottom: 0.75rem;">&#127774;</div>
+        <p style="font-family: 'Philosopher', serif; font-size: 1.4rem; color: #E8A020; margin-bottom: 0.4rem;">Ritual Recordings</p>
+        <p style="font-size: 1.05rem; color: #9CA3AF; line-height: 1.6;">Field recordings of ceremonies, pujas, and rituals</p>
+      </div>
+      <div style="background: #C8D6DE; padding: 2rem 1.5rem; text-align: center;" onmouseover="this.style.background='#EEF4F8'" onmouseout="this.style.background='#C8D6DE'">
+        <div style="font-size: 2.4rem; margin-bottom: 0.75rem;">&#127891;</div>
+        <p style="font-family: 'Philosopher', serif; font-size: 1.4rem; color: #E8A020; margin-bottom: 0.4rem;">Lectures & Discourses</p>
+        <p style="font-size: 1.05rem; color: #9CA3AF; line-height: 1.6;">Talks by gurus, historians, and cultural scholars</p>
+      </div>
+      <div style="background: #C8D6DE; padding: 2rem 1.5rem; text-align: center;" onmouseover="this.style.background='#EEF4F8'" onmouseout="this.style.background='#C8D6DE'">
+        <div style="font-size: 2.4rem; margin-bottom: 0.75rem;">&#127981;</div>
+        <p style="font-family: 'Philosopher', serif; font-size: 1.4rem; color: #E8A020; margin-bottom: 0.4rem;">Temple & Site Tours</p>
+        <p style="font-size: 1.05rem; color: #9CA3AF; line-height: 1.6;">Visual tours of sacred sites and heritage spaces</p>
+      </div>
+      <div style="background: #C8D6DE; padding: 2rem 1.5rem; text-align: center;" onmouseover="this.style.background='#EEF4F8'" onmouseout="this.style.background='#C8D6DE'">
+        <div style="font-size: 2.4rem; margin-bottom: 0.75rem;">&#127926;</div>
+        <p style="font-family: 'Philosopher', serif; font-size: 1.4rem; color: #E8A020; margin-bottom: 0.4rem;">Traditional Arts</p>
+        <p style="font-size: 1.05rem; color: #9CA3AF; line-height: 1.6;">Performances, crafts, music, and folk art demonstrations</p>
+      </div>
+    </div>
+
+    <!-- Submission form -->
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: start;">
+      <div>
+        <h3 style="font-family: 'Philosopher', serif; font-size: 2.4rem; color: #E8A020; margin-bottom: 1.5rem; font-weight: 400;">Video Submission Form</h3>
+
+        <!-- Status banner -->
+        <div id="video-status" style="display:none; padding: 1rem 1.25rem; border-radius: 2px; margin-bottom: 1.25rem; font-size: 0.98rem; font-family: 'Philosopher', serif;"></div>
+
+        <form id="video-form" onsubmit="handleVideoSubmit(event)" class="contact-form">
+          <input type="hidden" name="_formspree_id" value="YOUR_VIDEO_FORM_ID">
+          <input type="hidden" name="_subject" id="video-subject" value="New Video Submission &mdash; Suprabha Trust">
+          <input type="hidden" name="_replyto" id="video-replyto">
+          <input type="hidden" name="submission_type" value="Video">
+          <input type="hidden" name="submitted_at" id="video-timestamp">
+
+          <div class="field">
+            <label for="video-name">Your Name *</label>
+            <input type="text" id="video-name" name="submitter_name" required placeholder="Full name">
+          </div>
+          <div class="field">
+            <label for="video-email">Email Address *</label>
+            <input type="email" id="video-email" name="email" required placeholder="your@email.com" oninput="document.getElementById('video-replyto').value=this.value">
+          </div>
+          <div class="field">
+            <label for="video-phone">Phone Number</label>
+            <input type="tel" id="video-phone" name="phone" placeholder="+91 XXXXX XXXXX">
+          </div>
+          <div class="field">
+            <label for="video-title">Video Title *</label>
+            <input type="text" id="video-title" name="video_title" required placeholder="Title of your video" oninput="document.getElementById('video-subject').value='Video Submission: '+this.value+' &mdash; Suprabha Trust'">
+          </div>
+          <div class="field">
+            <label for="video-category">Video Category *</label>
+            <select id="video-category" name="category" required>
+              <option value="">Select a category</option>
+              <option>Documentary Film</option>
+              <option>Ritual Recording</option>
+              <option>Lecture / Discourse</option>
+              <option>Temple &amp; Site Tour</option>
+              <option>Traditional Art / Performance</option>
+              <option>Field Documentation</option>
+              <option>Educational Content</option>
+              <option>Interview / Conversation</option>
+              <option>Research Presentation</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="video-link-input">Video Link *</label>
+
+            <!-- Platform selector tabs -->
+            <div style="display: flex; gap: 0; margin-bottom: 0.5rem; border: 1px solid rgba(232,160,32,0.2); border-radius: 2px; overflow: hidden;">
+              <button type="button" class="vp-tab vp-active" onclick="setVideoPlatform('youtube', this)" style="flex:1;">â–¶ YouTube</button>
+              <button type="button" class="vp-tab" onclick="setVideoPlatform('vimeo', this)" style="flex:1; border-left: 1px solid rgba(232,160,32,0.2);">ðŸŽ¬ Vimeo</button>
+              <button type="button" class="vp-tab" onclick="setVideoPlatform('drive', this)" style="flex:1; border-left: 1px solid rgba(232,160,32,0.2);">ðŸ”— Drive</button>
+              <button type="button" class="vp-tab" onclick="setVideoPlatform('other', this)" style="flex:1; border-left: 1px solid rgba(232,160,32,0.2);">â‹¯ Other</button>
+            </div>
+
+            <!-- URL input with validate button -->
+            <div style="position: relative; display: flex; gap: 0.5rem; align-items: stretch;">
+              <input type="url" name="video_link" id="video-link-input" required
+                placeholder="Paste your video link here..."
+                oninput="onVideoLinkInput(this.value)">
+              <button type="button" onclick="validateVideoLink()" id="vlink-btn" class="btn-primary"
+                style="padding: 0 1.5rem; border: none; cursor: pointer; white-space: nowrap; margin-bottom: 1rem;">
+                Preview â–¶
+              </button>
+            </div>
+
+            <!-- Platform hint -->
+            <p id="vlink-hint" style="font-size: 0.94rem; color: #7A90A0; margin-top: 0.4rem; font-family: 'Philosopher', serif; line-height: 1.5;">
+              Paste a YouTube, Vimeo, Google Drive, or Dropbox link. Click Preview to verify it loads correctly.
+            </p>
+
+            <!-- Live preview panel -->
+            <div id="video-preview-panel" style="display:none; margin-top: 0.75rem; border: 1px solid rgba(232,160,32,0.2); border-radius: 2px; overflow: hidden; background: #0B0D17;">
+              <div style="padding: 0.5rem 0.85rem; background: rgba(232,160,32,0.1); display: flex; align-items: center; justify-content: space-between;">
+                <span id="vpreview-label" style="font-size: 1.02rem; color: #E8A020; font-family: 'Philosopher', serif; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase;"></span>
+                <button type="button" onclick="document.getElementById('video-preview-panel').style.display='none'"
+                  style="background:none; border:none; color:#7A90A0; cursor:pointer; font-size:0.8rem;">âœ• Close</button>
+              </div>
+              <!-- YouTube / Vimeo embed -->
+              <div id="vpreview-embed" style="display:none; position: relative; padding-top: 56.25%; background: black;">
+                <iframe id="vpreview-iframe"
+                  style="position:absolute; top:0; left:0; width:100%; height:100%; border:none;"
+                  allowfullscreen allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture">
+                </iframe>
+              </div>
+              <!-- Drive / Other link display -->
+              <div id="vpreview-link" style="display:none; padding: 1rem 1.25rem;">
+                <p style="font-size: 1.05rem; color: #F0F2F8; font-family: 'Philosopher', serif; margin-bottom: 0.5rem;">Link verified and ready to submit:</p>
+                <a id="vpreview-anchor" href="#" target="_blank" rel="noopener"
+                  style="font-size: 1.02rem; color: #E8A020; word-break: break-all; font-family: 'Philosopher', serif; text-decoration: underline;"></a>
+              </div>
+              <!-- Thumbnail for YouTube -->
+              <div id="vpreview-thumb" style="display:none; text-align: center; padding: 0.75rem;">
+                <img loading="lazy" id="vpreview-img" style="max-width: 100%; border-radius: 2px;" alt="Video thumbnail">
+              </div>
+            </div>
+
+            <!-- Hidden field storing detected platform -->
+            <input type="hidden" name="video_platform" id="video-platform-field" value="YouTube">
+            <input type="hidden" name="video_embed_id" id="video-embed-id-field">
+          </div>
+
+          <!-- â”€â”€ DRIVE SAVE FOLDER PANEL â”€â”€ -->
+          <div id="drive-folder-panel" style="background: #15192B; border: 1px solid rgba(232,160,32,0.2); border-radius: 2px; padding: 1rem 1.25rem;">
+            <p style="font-size: 0.74rem; font-weight: 500; letter-spacing: 0.2em; text-transform: uppercase; color: rgba(240,242,248,0.6); margin-bottom: 0.75rem; font-family: 'Philosopher', serif;">ðŸ“ Suprabha Trust &mdash; Video Archive Folder</p>
+            <p style="font-size: 1.05rem; color: #9CA3AF; line-height: 1.75; margin-bottom: 0.85rem; font-family: 'Philosopher', serif;">
+              All submitted videos are saved and organised in the Suprabha Trust Google Drive archive. You can also upload your video file directly to the shared folder below &mdash; your submission will be reviewed by the editorial team.
+            </p>
+
+            <!-- Folder link button &mdash; updates when config is set -->
+            <div style="display: flex; align-items: center; gap: 0.75rem; flex-wrap: wrap; margin-bottom: 0.75rem;">
+              <a id="drive-folder-link" href="YOUR_GOOGLE_DRIVE_VIDEO_FOLDER_URL" target="_blank" rel="noopener"
+                style="display: inline-flex; align-items: center; gap: 0.5rem; background: #0B0D17; color: #E8A020; padding: 0.65rem 1.25rem; font-family: 'Philosopher', serif; font-size: 1rem; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; text-decoration: none; border-radius: 2px; border: 1px solid rgba(232,160,32,0.3); transition: background 0.2s;">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="#E8A020" stroke-width="1.5" stroke-linejoin="round"/>
+                  <path d="M2 17L12 22L22 17" stroke="#E8A020" stroke-width="1.5" stroke-linejoin="round"/>
+                  <path d="M2 12L12 17L22 12" stroke="#E8A020" stroke-width="1.5" stroke-linejoin="round"/>
+                </svg>
+                Open Video Archive Folder
+              </a>
+              <span style="font-size: 0.94rem; color: #7A90A0; font-family: 'Philosopher', serif;">Google Drive &middot; Suprabha Trust</span>
+            </div>
+
+            <!-- Folder structure visual -->
+            <div style="background: rgba(21,25,43,0.6); border: 1px solid rgba(232,160,32,0.12); border-radius: 2px; padding: 0.85rem 1rem;">
+              <p style="font-size: 0.74rem; font-weight: 500; letter-spacing: 0.15em; text-transform: uppercase; color: rgba(240,242,248,0.6); margin-bottom: 0.6rem; font-family: 'Philosopher', serif;">Folder Structure</p>
+              <div style="font-family: 'Philosopher', serif; font-size: 1.02rem; color: #9CA3AF; line-height: 2;">
+                <div>ðŸ“ <strong>Suprabha Trust Submissions</strong></div>
+                <div style="padding-left: 1.25rem;">ðŸ“‚ <strong>Video Submissions</strong>
+                  <div style="padding-left: 1.25rem; color: #7A90A0;">
+                    <div>ðŸ“‚ Documentary Films</div>
+                    <div>ðŸ“‚ Ritual Recordings</div>
+                    <div>ðŸ“‚ Lectures & Discourses</div>
+                    <div>ðŸ“‚ Temple & Site Tours</div>
+                    <div>ðŸ“‚ Traditional Arts</div>
+                    <div>ðŸ“‚ Research Presentations</div>
+                    <div>ðŸ“‚ Field Documentation</div>
+                    <div>ðŸ“‚ Other</div>
+                  </div>
+                </div>
+                <div style="padding-left: 1.25rem;">ðŸ“‚ Article Submissions</div>
+                <div style="padding-left: 1.25rem;">ðŸ“‚ Biofield Research</div>
+                <div style="padding-left: 1.25rem;">ðŸ“Š Submission Log (Google Sheet)</div>
+              </div>
+            </div>
+
+            <p style="font-size: 0.94rem; color: #7A90A0; margin-top: 0.7rem; font-family: 'Philosopher', serif; line-height: 1.6;">
+              â„¹ If your video file is large, upload it directly to the folder above and paste the Drive link in the form field. All submissions are reviewed within 7&ldquo;10 working days.
+            </p>
+
+            <!-- Dev notice &mdash; hidden once folder URL is set -->
+            <div id="folder-dev-notice" style="margin-top: 0.7rem; padding: 0.6rem 0.85rem; background: rgba(232,160,32,0.07); border-left: 3px solid #E8A020; font-size: 0.98rem; color: #E8A020; font-family: 'Philosopher', serif; line-height: 1.6;">
+              âš™ <strong>Setup:</strong> Create a Google Drive folder &rarr; right-click &rarr; Share &rarr; "Anyone with the link can view" &rarr; copy the folder URL &rarr; replace <code>YOUR_GOOGLE_DRIVE_VIDEO_FOLDER_URL</code> in the website script and update the <code>href</code> of the "Open Video Archive Folder" button above.
+            </div>
+          </div>
+
+          <style>
+            .vp-tab {
+              padding: 0.6rem 0.4rem; font-family: 'Philosopher', serif; font-size: 0.98rem;
+              font-weight: 400; letter-spacing: 0.06em; border: none;
+              background: rgba(21,25,43,0.6); color: #7A90A0; cursor: pointer; transition: all 0.18s;
+            }
+            .vp-tab:hover { background: rgba(232,160,32,0.07); color: rgba(240,242,248,0.6); }
+            .vp-tab.vp-active { background: #E8A020; color: #0B0D17; font-weight: 600; }
+          </style>
+
+          <script>
+            let currentVideoPlatform = 'youtube';
+
+            // Update Drive folder link from config
+            (function syncFolderLink() {
+              const cfg = typeof SUBMISSION_CONFIG !== 'undefined' ? SUBMISSION_CONFIG : null;
+              if (!cfg) return;
+              const link = document.getElementById('drive-folder-link');
+              const notice = document.getElementById('folder-dev-notice');
+              if (cfg.videoFolderUrl && !cfg.videoFolderUrl.includes('YOUR_GOOGLE')) {
+                if (link) link.href = cfg.videoFolderUrl;
+                if (notice) notice.style.display = 'none';
+              }
+            })();
+
+            const PLATFORM_HINTS = {
+              youtube: 'Paste a YouTube link: youtube.com/watch?v=... or youtu.be/...',
+              vimeo:   'Paste a Vimeo link: vimeo.com/123456789',
+              drive:   'Paste a Google Drive shareable link. Make sure sharing is set to "Anyone with the link".',
+              other:   'Paste any public video URL &mdash; Dropbox, Dailymotion, or direct .mp4 link.'
+            };
+
+            function setVideoPlatform(platform, btn) {
+              currentVideoPlatform = platform;
+              document.querySelectorAll('.vp-tab').forEach(b => b.classList.remove('vp-active'));
+              btn.classList.add('vp-active');
+              document.getElementById('vlink-hint').textContent = PLATFORM_HINTS[platform];
+              document.getElementById('video-platform-field').value =
+                platform === 'youtube' ? 'YouTube' :
+                platform === 'vimeo'   ? 'Vimeo'   :
+                platform === 'drive'   ? 'Google Drive' : 'Other';
+              document.getElementById('video-link-input').value = '';
+              document.getElementById('video-preview-panel').style.display = 'none';
+              // Auto-detect placeholder
+              const ph = { youtube:'https://youtube.com/watch?v=...', vimeo:'https://vimeo.com/123456789', drive:'https://drive.google.com/file/d/...', other:'https://' };
+              document.getElementById('video-link-input').placeholder = ph[platform];
+            }
+
+            function onVideoLinkInput(val) {
+              // Auto-detect platform from URL
+              if (val.includes('youtu')) {
+                currentVideoPlatform = 'youtube';
+              } else if (val.includes('vimeo')) {
+                currentVideoPlatform = 'vimeo';
+              } else if (val.includes('drive.google')) {
+                currentVideoPlatform = 'drive';
+              }
+            }
+
+            function extractYouTubeId(url) {
+              const regexps = [
+                /youtube\.com\/watch\?v=([^&]+)/,
+                /youtu\.be\/([^?&]+)/,
+                /youtube\.com\/embed\/([^?&]+)/,
+                /youtube\.com\/shorts\/([^?&]+)/
+              ];
+              for (const re of regexps) {
+                const m = url.match(re);
+                if (m) return m[1];
+              }
+              return null;
+            }
+
+            function extractVimeoId(url) {
+              const m = url.match(/vimeo\.com\/(\d+)/);
+              return m ? m[1] : null;
+            }
+
+            function validateVideoLink() {
+              const url = document.getElementById('video-link-input').value.trim();
+              if (!url) {
+                document.getElementById('vlink-hint').textContent = 'âš  Please paste a video link first.';
+                document.getElementById('vlink-hint').style.color = '#B91C1C';
+                return;
+              }
+
+              const panel  = document.getElementById('video-preview-panel');
+              const embed  = document.getElementById('vpreview-embed');
+              const iframe = document.getElementById('vpreview-iframe');
+              const thumb  = document.getElementById('vpreview-thumb');
+              const img    = document.getElementById('vpreview-img');
+              const linkEl = document.getElementById('vpreview-link');
+              const anchor = document.getElementById('vpreview-anchor');
+              const label  = document.getElementById('vpreview-label');
+
+              // Reset
+              embed.style.display = 'none';
+              thumb.style.display = 'none';
+              linkEl.style.display = 'none';
+              iframe.src = '';
+
+              const ytId = extractYouTubeId(url);
+              const vmId = extractVimeoId(url);
+
+              if (ytId) {
+                label.textContent = 'âœ” YouTube video detected';
+                iframe.src = 'https://www.youtube.com/embed/' + ytId + '?rel=0';
+                embed.style.display = 'block';
+                document.getElementById('video-embed-id-field').value = ytId;
+                document.getElementById('video-platform-field').value = 'YouTube';
+                // Also show thumbnail
+                img.src = 'https://img.youtube.com/vi/' + ytId + '/hqdefault.jpg';
+                panel.style.display = 'block';
+                document.getElementById('vlink-hint').textContent = 'âœ” YouTube video verified. The embed above shows a live preview.';
+                document.getElementById('vlink-hint').style.color = '#166534';
+              } else if (vmId) {
+                label.textContent = 'âœ” Vimeo video detected';
+                iframe.src = 'https://player.vimeo.com/video/' + vmId;
+                embed.style.display = 'block';
+                document.getElementById('video-embed-id-field').value = vmId;
+                document.getElementById('video-platform-field').value = 'Vimeo';
+                panel.style.display = 'block';
+                document.getElementById('vlink-hint').textContent = 'âœ” Vimeo video verified.';
+                document.getElementById('vlink-hint').style.color = '#166534';
+              } else if (url.includes('drive.google.com')) {
+                label.textContent = 'âœ” Google Drive link detected';
+                anchor.href = url;
+                anchor.textContent = url;
+                linkEl.style.display = 'block';
+                document.getElementById('video-platform-field').value = 'Google Drive';
+                panel.style.display = 'block';
+                document.getElementById('vlink-hint').textContent = 'âœ” Drive link noted. Make sure the file is shared as "Anyone with the link can view".';
+                document.getElementById('vlink-hint').style.color = '#166534';
+              } else if (url.startsWith('http')) {
+                label.textContent = 'âœ” Video link accepted';
+                anchor.href = url;
+                anchor.textContent = url;
+                linkEl.style.display = 'block';
+                panel.style.display = 'block';
+                document.getElementById('vlink-hint').textContent = 'âœ” Link accepted. Please ensure it is publicly accessible.';
+                document.getElementById('vlink-hint').style.color = '#166534';
+              } else {
+                document.getElementById('vlink-hint').textContent = 'âš  Please enter a valid URL starting with https://';
+                document.getElementById('vlink-hint').style.color = '#B91C1C';
+              }
+            }
+          </script>
+          <div class="field">
+            <label>Duration & Language</label>
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem; margin-bottom: 0.5rem;">
+              <input type="text" name="duration" placeholder="e.g. 12 minutes">
+              <input type="text" name="language" placeholder="e.g. Telugu, Hindi, English">
+            </div>
+          </div>
+          <div class="field">
+            <label for="video-description">Description *</label>
+            <textarea name="description" id="video-description" placeholder="Briefly describe the content, location, tradition, and significance of the video..." required></textarea>
+          </div>
+          <div style="display: flex; align-items: flex-start; gap: 0.75rem; margin-top: 0.25rem; margin-bottom: 1rem;">
+            <input type="checkbox" id="video-consent" required style="margin-top: 3px; accent-color: #E8A020; width: 14px; height: 14px; flex-shrink: 0;">
+            <label for="video-consent" style="font-size: 0.95rem; color: rgba(255,255,255,0.6); line-height: 1.6; cursor: pointer;">I confirm this video is my original work or I have the rights to share it, and I consent to Suprabha Trust publishing it on their platform.</label>
+          </div>
+          <button type="submit" id="video-submit-btn" class="btn-primary" style="margin-top: 0.5rem; border: none; cursor: pointer;">Submit Video &rarr;</button>
+        </form>
+      </div>
+
+      <!-- Guidelines panel -->
+      <div>
+        <h3 style="font-family: 'Philosopher', serif; font-size: 2.4rem; color: #E8A020; margin-bottom: 1.5rem; font-weight: 400;">Submission Guidelines</h3>
+        <div style="display: flex; flex-direction: column; gap: 1.2rem;">
+          <div style="display: flex; gap: 1rem; padding-bottom: 1.2rem; border-bottom: 1px solid rgba(232,160,32,0.1);">
+            <div style="min-width: 32px; height: 32px; border-radius: 50%; background: rgba(232,160,32,0.1); border: 1px solid rgba(232,160,32,0.3); display: flex; align-items: center; justify-content: center; font-family: 'Philosopher', serif; font-size: 1rem; color: #E8A020; flex-shrink: 0;">1</div>
+            <div>
+              <p style="font-size: 1rem; font-weight: 500; color: #F0F2F8; margin-bottom: 0.3rem; font-family: 'Philosopher', serif;">Content must be relevant</p>
+              <p style="font-size: 0.94rem; color: rgba(20,50,75,0.6); line-height: 1.65;">Videos should focus on traditional and cultural sciences of India &mdash; rituals, heritage sites, philosophy, arts, or related subjects.</p>
+            </div>
+          </div>
+          <div style="display: flex; gap: 1rem; padding-bottom: 1.2rem; border-bottom: 1px solid rgba(232,160,32,0.1);">
+            <div style="min-width: 32px; height: 32px; border-radius: 50%; background: rgba(232,160,32,0.1); border: 1px solid rgba(232,160,32,0.3); display: flex; align-items: center; justify-content: center; font-family: 'Philosopher', serif; font-size: 1rem; color: #E8A020; flex-shrink: 0;">2</div>
+            <div>
+              <p style="font-size: 1rem; font-weight: 500; color: #F0F2F8; margin-bottom: 0.3rem; font-family: 'Philosopher', serif;">Original or rights-cleared content only</p>
+              <p style="font-size: 0.94rem; color: rgba(20,50,75,0.6); line-height: 1.65;">Submit only videos you filmed yourself or have explicit permission to share and publish.</p>
+            </div>
+          </div>
+          <div style="display: flex; gap: 1rem; padding-bottom: 1.2rem; border-bottom: 1px solid rgba(232,160,32,0.1);">
+            <div style="min-width: 32px; height: 32px; border-radius: 50%; background: rgba(232,160,32,0.1); border: 1px solid rgba(232,160,32,0.3); display: flex; align-items: center; justify-content: center; font-family: 'Philosopher', serif; font-size: 1rem; color: #E8A020; flex-shrink: 0;">3</div>
+            <div>
+              <p style="font-size: 1rem; font-weight: 500; color: #F0F2F8; margin-bottom: 0.3rem; font-family: 'Philosopher', serif;">Accepted formats & platforms</p>
+              <p style="font-size: 0.94rem; color: rgba(20,50,75,0.6); line-height: 1.65;">YouTube, Vimeo, Google Drive, or Dropbox links accepted. Minimum 480p resolution. Any duration welcome.</p>
+            </div>
+          </div>
+          <div style="display: flex; gap: 1rem; padding-bottom: 1.2rem; border-bottom: 1px solid rgba(232,160,32,0.1);">
+            <div style="min-width: 32px; height: 32px; border-radius: 50%; background: rgba(232,160,32,0.1); border: 1px solid rgba(232,160,32,0.3); display: flex; align-items: center; justify-content: center; font-family: 'Philosopher', serif; font-size: 1rem; color: #E8A020; flex-shrink: 0;">4</div>
+            <div>
+              <p style="font-size: 1rem; font-weight: 500; color: #F0F2F8; margin-bottom: 0.3rem; font-family: 'Philosopher', serif;">Review process</p>
+              <p style="font-size: 0.94rem; color: rgba(20,50,75,0.6); line-height: 1.65;">All submissions are reviewed by our editorial team before publication. You will be notified by email within 7&ldquo;10 working days.</p>
+            </div>
+          </div>
+          <div style="display: flex; gap: 1rem;">
+            <div style="min-width: 32px; height: 32px; border-radius: 50%; background: rgba(232,160,32,0.1); border: 1px solid rgba(232,160,32,0.3); display: flex; align-items: center; justify-content: center; font-family: 'Philosopher', serif; font-size: 1rem; color: #E8A020; flex-shrink: 0;">5</div>
+            <div>
+              <p style="font-size: 1rem; font-weight: 500; color: #F0F2F8; margin-bottom: 0.3rem; font-family: 'Philosopher', serif;">Credit & attribution</p>
+              <p style="font-size: 0.94rem; color: rgba(20,50,75,0.6); line-height: 1.65;">Your name and any organisation you represent will be credited alongside the published video.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact nudge -->
+        <div style="margin-top: 2.5rem; padding: 1.5rem; border: 1px solid rgba(232,160,32,0.2); border-radius: 2px; background: rgba(232,160,32,0.06);">
+          <p style="font-size: 0.94rem; color: rgba(11,13,23,0.65); line-height: 1.7;">Have a large collection or need to send files directly? Write to us at <span><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="f08385808291929891999e94b0979d91999cde939f9d">[email&#160;protected]</a></span> or call <span>+91 98494 46409</span>.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</div><!-- /page-videos -->
+
+
+</div><!-- /page-renewable -->
+<!-- RENEWABLE ENERGY -->
+</main>
+<!-- INCLUDE footer -->

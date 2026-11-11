@@ -1,0 +1,41 @@
+:root {
+  /* Core Palette - Cosmic Mystic */
+  --color-primary:      #E8A020;  /* Rich Gold - primary CTA, accents */
+  --color-primary-hover:#F5B742;  /* Bright Gold - hover states */
+  --color-secondary:    #D4820A;  /* Deep Orange/Amber */
+  
+  --color-bg:           #0B0D17;  /* Midnight Cosmic Blue - page background */
+  --color-surface:      #15192B;  /* Deep Indigo - cards, panels */
+  --color-surface-hover:#1C2138;
+  
+  --color-text:         #F0F2F8;  /* Off-white - primary text */
+  --color-muted:        #9CA3AF;  /* Cool Gray - secondary text */
+  --color-text-on-dark: #FFFFFF;
+  
+  --color-deep:         #07080F;  /* Darkest blue - footer */
+  --color-divider:      #D4820A;
+  
+  /* Gradients */
+  --gradient-primary: linear-gradient(135deg, var(--color-secondary) 0%, var(--color-primary) 100%);
+  --gradient-surface: linear-gradient(145deg, rgba(21, 25, 43, 0.8) 0%, rgba(21, 25, 43, 0.4) 100%);
+  --gradient-text: linear-gradient(to right, #F5B742, #E8A020, #D4820A);
+  
+  /* Typography */
+  --font-display: 'Philosopher', serif;
+  --font-body: 'Philosopher', serif;
+  
+  /* Layout & Elevations */
+  --radius-sm: 8px;
+  --radius-md: 16px;
+  --radius-lg: 32px;
+  
+  --shadow-sm: 0 4px 12px rgba(0, 0, 0, 0.2);
+  --shadow-md: 0 12px 32px rgba(0, 0, 0, 0.3);
+  --shadow-lg: 0 24px 48px rgba(0, 0, 0, 0.4);
+  --shadow-glow: 0 0 24px rgba(232, 160, 32, 0.25);
+  
+  /* Glassmorphism */
+  --glass-bg: rgba(21, 25, 43, 0.6);
+  --glass-dark-bg: rgba(11, 13, 23, 0.8);
+  --glass-border: 1px solid rgba(255, 255, 255, 0.08);
+}

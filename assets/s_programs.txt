@@ -1,0 +1,81 @@
+<!-- UPCOMING PROGRAMS -->
+<section id="programs" class="alt-bg">
+  <div class="container">
+    <p class="section-eyebrow">What's Coming</p>
+    <h2 class="section-title">Upcoming Programs</h2>
+    <div class="gold-line"></div>
+    <p class="section-desc" style="margin-bottom: 4rem;">Join us for workshops, festivals, lectures, and field programs — many co-hosted with partner institutions across India. Register early as seats are limited.</p>
+
+    <!-- Featured program -->
+    <div class="card reveal" style="padding: 0; flex-direction: row; gap: 0; overflow: hidden; margin-bottom: 4rem;">
+      <div style="background: rgba(11, 13, 23, 0.8); padding: 3rem; text-align: center; border-right: var(--glass-border); flex: 1; display: flex; flex-direction: column; justify-content: center;">
+        <p style="font-size: 0.7rem; letter-spacing: 0.25em; text-transform: uppercase; color: var(--color-primary); margin-bottom: 1rem;">Featured Event</p>
+        <p style="font-family: var(--font-display); font-size: 4rem; color: var(--color-text); line-height: 1; margin-bottom: 0;">28</p>
+        <p style="font-size: 1.2rem; color: var(--color-secondary);">June 2025</p>
+        <div style="width: 40px; height: 1px; background: var(--color-primary); margin: 1.5rem auto; opacity: 0.5;"></div>
+        <p style="font-size: 0.9rem; color: var(--color-muted); text-transform: uppercase; letter-spacing: 0.1em;">Hyderabad</p>
+      </div>
+      <div style="padding: 3rem; flex: 2;">
+        <div style="display: flex; gap: 0.5rem; margin-bottom: 1.5rem;">
+          <span class="cat-pill" style="padding: 4px 12px; font-size: 11px; text-transform: uppercase; letter-spacing: 0.1em;">Workshop</span>
+          <span class="cat-pill" style="padding: 4px 12px; font-size: 11px; text-transform: uppercase; letter-spacing: 0.1em; background: rgba(232, 160, 32, 0.1); color: var(--color-primary);">In Collaboration</span>
+        </div>
+        <h3 style="font-size: 2rem; margin-bottom: 1rem;">Vedic Cosmology & Sacred Geometry</h3>
+        <p style="color: var(--color-muted); margin-bottom: 2rem;">A full-day immersive workshop exploring the cosmic sciences embedded in ancient Indian temple design and ritual geometry — conducted by leading scholars.</p>
+        <a href="contact.html" class="btn-primary">Register Interest</a>
+      </div>
+    </div>
+
+    <!-- Program cards grid -->
+    <div class="card-grid" style="margin-bottom: 4rem;">
+
+      <!-- Card 1 -->
+      <div class="card reveal">
+        <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 1.5rem; border-bottom: var(--glass-border); padding-bottom: 1.5rem;">
+          <div>
+            <p style="font-family: var(--font-display); font-size: 2rem; color: var(--color-primary); line-height: 1; margin:0;">12 <span style="font-size: 1.2rem; color: var(--color-text);">July</span></p>
+            <p style="font-size: 0.9rem; color: var(--color-muted); margin:0;">2025</p>
+          </div>
+          <span class="cat-pill" style="padding: 4px 10px; font-size: 10px;">Field Trip</span>
+        </div>
+        <h3 style="font-size: 1.3rem; margin-bottom: 0.5rem;">Heritage Temple Trail</h3>
+        <p style="font-size: 0.95rem; color: var(--color-muted); flex-grow: 1;">Guided documentation tour of the Kakatiya-era temples of Warangal district.</p>
+        <a href="contact.html" style="color: var(--color-secondary); font-weight: 600; font-size: 0.9rem; margin-top: 1.5rem;">Register →</a>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="card reveal reveal-delay-1">
+        <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 1.5rem; border-bottom: var(--glass-border); padding-bottom: 1.5rem;">
+          <div>
+            <p style="font-family: var(--font-display); font-size: 2rem; color: var(--color-primary); line-height: 1; margin:0;">05 <span style="font-size: 1.2rem; color: var(--color-text);">Aug</span></p>
+            <p style="font-size: 0.9rem; color: var(--color-muted); margin:0;">2025</p>
+          </div>
+          <span class="cat-pill" style="padding: 4px 10px; font-size: 10px;">Lecture Series</span>
+        </div>
+        <h3 style="font-size: 1.3rem; margin-bottom: 0.5rem;">Tantra, Mantra & Yantra</h3>
+        <p style="font-size: 0.95rem; color: var(--color-muted); flex-grow: 1;">A three-session evening discourse series decoding the science of Tantra and Yantra.</p>
+        <a href="contact.html" style="color: var(--color-secondary); font-weight: 600; font-size: 0.9rem; margin-top: 1.5rem;">Register →</a>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="card reveal reveal-delay-2">
+        <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 1.5rem; border-bottom: var(--glass-border); padding-bottom: 1.5rem;">
+          <div>
+            <p style="font-family: var(--font-display); font-size: 2rem; color: var(--color-primary); line-height: 1; margin:0;">20 <span style="font-size: 1.2rem; color: var(--color-text);">Sep</span></p>
+            <p style="font-size: 0.9rem; color: var(--color-muted); margin:0;">2025</p>
+          </div>
+          <span class="cat-pill" style="padding: 4px 10px; font-size: 10px;">Festival</span>
+        </div>
+        <h3 style="font-size: 1.3rem; margin-bottom: 0.5rem;">Sanatana Sanskriti Utsavam</h3>
+        <p style="font-size: 0.95rem; color: var(--color-muted); flex-grow: 1;">An annual cultural festival celebrating India's living traditions and folk performances.</p>
+        <a href="contact.html" style="color: var(--color-secondary); font-weight: 600; font-size: 0.9rem; margin-top: 1.5rem;">Register →</a>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+
+
